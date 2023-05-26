@@ -278,7 +278,9 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    height: auto;
+    grid-gap: 10px;
+    max-height: calc(100vh - 4.4rem);
+    overflow: auto;
   }
   .left {
     grid-column: 1/-1;
@@ -294,14 +296,15 @@ footer p {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
   }
   .right-top img,
   .right-bottom img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: transform 0.2s ease-out;
     border: 2px solid black;
-    margin: 10px;
+    margin: 10px 0;
   }
   .right-top img:hover,
   .right-bottom img:hover {
